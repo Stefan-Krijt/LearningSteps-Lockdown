@@ -1,0 +1,16 @@
+# To store Terraform state remotely in Azure Storage, rename this file to backend.tf
+# and fill in the values for your storage account.
+#
+# Create the storage account first:
+#   az group create --name rg-tfstate --location westeurope
+#   az storage account create --name <your-unique-name> --resource-group rg-tfstate --sku Standard_LRS
+#   az storage container create --name tfstate --account-name <your-unique-name>
+
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "rg-tfstate"
+    storage_account_name = "<your-unique-storage-account-name>"
+    container_name       = "tfstate"
+    key                  = "learningsteps.tfstate"
+  }
+}

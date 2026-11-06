@@ -1,0 +1,31 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+*.tfvars
+!terraform.tfvars.example
+
+# SSH & Credentials
+*.pem
+*.key
+.learningsteps_key*
+azssh_config
+az_ssh_config/
+npm.cookies
+
+# Backups & Data
+*.sql
+*.sqlite
+npmplus_backup.sqlite
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / Editor
+.DS_Store
+.claude/
+.playwright-mcp/

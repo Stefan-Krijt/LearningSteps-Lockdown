@@ -1,0 +1,9 @@
+prefix            = "learningsteps"
+location          = "westeurope"
+vm_admin_username = "azureuser"
+vm_admin_ssh_key  = "ssh-rsa AAAA..."  # paste your public key here
+
+db_admin_username = "psqladmin"
+db_admin_password = "ChangeMe123!"     # use a strong password
+db_name           = "learning_journal"
+my_ip = "YOUR_PUBLIC_IP_HERE"
